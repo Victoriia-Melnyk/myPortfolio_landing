@@ -27,7 +27,7 @@
 		/>
 		<link rel="stylesheet" href="styles/style.css" />
 	</head>
-	<body class="homepage">
+	<body class="about_page">
 		<div class="container pt-3">
 			<nav class="navbar navbar-expand-lg">
 				<div class="container-fluid">
@@ -46,10 +46,12 @@
 					<div class="collapse navbar-collapse" id="navbarNav">
 						<ul class="navbar-nav">
 							<li class="nav-item">
-								<a class="nav-link active" href="#">Home</a>
+								<a class="nav-link" href="#">Home</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link" href="/about.html" target="_blank">About</a>
+								<a class="nav-link active" href="/about.html" target="_blank"
+									>About</a
+								>
 							</li>
 							<li class="nav-item">
 								<a class="nav-link portfolio_link rounded-pill" href="#"
@@ -64,38 +66,49 @@
 				</div>
 			</nav>
 		</div>
-
-		<div class="home_container p-3 p-md-0">
-			<div class="home_content">
-				<p class="home_paragraph border-md-top border-black pt-5">Hi, I am</p>
-				<h1 class="home_title mb-5">Viktoria Melnyk</h1>
-				<h2 class="home_subtitle mb-5">
-					Ukrainian Frontend Developer, based in Portugal
-				</h2>
-				<a href="/about.html" class="btn main_btn">Get started</a>
+		<div class="container mt-md-3 mt-lg-5">
+			<div class="about_content">
+				<div class="flex-child text-center">
+					<img
+						src="images/about.jpg"
+						alt=""
+						class="about_image img-fluid rounded"
+					/>
+				</div>
+				<div class="flex-child text-center">
+					<div class="about_information">
+						<h1 class="about_title mb-3">Hi I am Viktoria Melnyk</h1>
+						<h2 class="about_subtitle mb-4">
+							Ukrainian FrontEnd Developer based in Portugal
+						</h2>
+						<p class="about_paragraph mb-md-3">
+							I help designers, small agencies and businesses bring their ideas
+							to life creating their own web-sites
+						</p>
+            <p class="about_subtitle mb-3 d-none d-md-inline">My skills:</p>
+						<div class="about_skills text-center d-none d-md-flex justify-content-between">
+							<div class="about_skill rounded">HTML</div>
+							<div class="about_skill rounded">CSS</div>
+							<div class="about_skill rounded">JavaScript</div>
+							<div class="about_skill rounded">Bootstrap</div>
+							<div class="about_skill rounded">React</div>
+							<div class="about_skill rounded">TypeScript</div>
+						</div>
+					</div>
+				</div>
+				<p class="about_subtitle mb-1 d-md-none">My skills:</p>
+				<div class="about_skills d-md-none flex-child text-center">
+					<div class="about_skill rounded">HTML</div>
+					<div class="about_skill rounded">CSS</div>
+					<div class="about_skill rounded">JavaScript</div>
+					<div class="about_skill rounded">Bootstrap</div>
+					<div class="about_skill rounded">React</div>
+					<div class="about_skill rounded">TypeScript</div>
+				</div>
 			</div>
-			<div class="home_socials d-none d-md-flex rounded">
-				<a href="#">
-					<i class="fa-brands fa-github fa-2xl" style="color: #000000"></i>
-				</a>
-				<a href="#">
-					<i class="fa-brands fa-linkedin fa-2xl" style="color: #000000"></i>
-				</a>
-				<a href="#">
-					<i class="fa-brands fa-facebook fa-2xl" style="color: #000000"></i>
-				</a>
-			</div>
-			<div class="home_socials-mobile d-md-none">
-				<a class="p-2 text-decoration-none" href="#">
-					<i class="fa-brands fa-github fa-2xl" style="color: #000000"></i>
-				</a>
-				<a class="p-2 text-decoration-none" href="#">
-					<i class="fa-brands fa-linkedin fa-2xl" style="color: #000000"></i>
-				</a>
-				<a class="p-2 text-decoration-none" href="#">
-					<i class="fa-brands fa-facebook fa-2xl" style="color: #000000"></i>
-				</a>
-			</div>
+			<a href="/projects.html" class="btn main_btn about_btn"
+				>View all projects</a
+			>
 		</div>
 	</body>
 </html>
